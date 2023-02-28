@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping practice</title>
+</head>
+<body>
+    <H1>Questions</H1>
+    <p>1. Write a function that takes an array of numbers and returns the sum of all the numbers in the array using a loop.<br>
+    2. Write a function that takes an array of strings and returns the length of the longest string in the array using a loop.<br>
+3. Write a function that takes an array of numbers and returns a new array that contains only the even numbers using a loop.<br>
+4. Write a function that takes an array of strings and returns a new array that contains only the strings that start with the letter "a" using a loop<br>
+5. Write a function that takes an array of numbers and returns the average of all the numbers in the array using a loop.</p>
+</body>
+<script>
+    function sumArray(array){
+        let sum = 0;
+        for (let i = 0; i < array.lengt; i++) {
+            sum =+ array[i]
+            
+        }
+        return sum;
+    }
+
+    function longestString (array){
+       let maxLength = 0;
+        for(let i = 0; i < array.length; i++){
+            if(array[i].length > maxLength){
+                maxLength = array[i].length;
+            }
+        }
+        return maxLength;
+    }
+
+    function evenArray(array){
+       let evenArray = [];
+        for(let i = 0; i < array.length; i++){
+            if(array[i] % 2 === 0){
+                evenArray.push(array[i]);
+            }
+        }
+        return evenArray;
+    }
+
+    function aStrings(array){
+        let aStrings = [];
+        for(let i = 0; i < array.length; i++){
+            if(array[i][0] === "a") {
+                aStrings.push(array[i]);
+            }
+        }
+        return aString;
+    }
+
+    function averageArray(array){
+        sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum =+ array[i];  
+        }
+        return sum / array.length;
+    }
+
+    const numbers = [1, 2, 3, 4, 5];
+    const strings = ["apple", "banana", "apricot", "kiwi"];
+
+    document.write("<p> Sum of array; " + sumArray(numbers) + "<p>");
+    document.write("<p> Length of the longest string is: " + longestString(strings) + "<p>");
+    document.write("<p> Even number in array is: " + evenArray(numbers) + "<p>");
+    document.write("<p> Strings that start with a' is: " + aString(strings) + "<p>");
+    document.write("<p> Average of array is: " + averageArray(strings) + "<p>");
+</script>
+</html>
